@@ -1,0 +1,19 @@
+
+.TextLeft{
+  text-align: left;
+}
+.TextRight{
+  align-content: end;
+  text-align: end;
+  color: red;
+  display: inline-block;
+}
+
+.custom-box-shadow:focus {
+  box-shadow: 0px 4px 8px rgba(133, 252, 62, 0.9); /* Ajusta este valor según necesites */
+}
+
+body{
+  background-color: black;
+  color: white;
+}
