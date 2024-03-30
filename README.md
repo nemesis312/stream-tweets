@@ -1,6 +1,6 @@
 # Tweet Scheduler with Time Zones
 
-![Example Image](https://yourimageshare.com/ib/VDL7jc9vYU)
+![Example Image](https://yourimageshare.com/ib/VDL7jc9vYU.webp)
 
 ## Description
 
