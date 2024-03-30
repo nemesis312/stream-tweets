@@ -16,7 +16,7 @@ Tweet Scheduler with Time Zones is a tool designed to assist content creators in
 To get started with Tweet Scheduler with Time Zones:
 
 1. Clone the repository to your local machine.
-   git clone https://github.com/your-username/tweet-scheduler-with-timezones.git
+   git clone https://github.com/nemesis312/stream-tweets.git
 
 2. Install dependencies.
    npm install
@@ -49,5 +49,5 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE) f
 
 ## Contact
 
-Your Name – [@yourTwitter](https://twitter.com/yourTwitter) – email@example.com
-Project URL: https://github.com/your-username/tweet-scheduler-with-timezones
+Lesther Ruiz – [@BoricuaCoder](https://twitter.com/BoricuaCoder) – boricua.coder@gmail.com
+Project URL: https://github.com/nemesis312/stream-tweets.git
