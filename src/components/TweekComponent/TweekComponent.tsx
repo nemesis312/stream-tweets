@@ -17,8 +17,12 @@ interface Option {
 interface SelectProps {
   options: Option[];
 }
+interface AlertContentProps {
+  text: string;
+  options: Option[];
+}
 
-let config = {
+const config = {
   boxShadow: "0px 4px 8px rgba(133, 252, 62, 0.9)",
   isSelectedFocus: "#ccc",
   bgOptionColor: "#85FC3E",
@@ -82,18 +86,16 @@ function TweekComponent() {
     ));
   };
 
-  const copyTextToClipboard = async (text) => {
+  const copyTextToClipboard = async (text: string) => {
     try {
       await navigator.clipboard.writeText(text);
-      // Aquí puedes agregar alguna notificación o cambio de estado para informar al usuario
       alert("Text copied to clipboard!");
     } catch (error) {
       console.error("Failed to copy text: ", error);
-      // Aquí puedes manejar el error, tal vez mostrando un mensaje al usuario
     }
   };
 
-  const AlertContent = ({ text, options }) => {
+  const AlertContent: React.FC<AlertContentProps> = ({ text, options }) => {
     const textToCopy = React.useMemo(() => {
       let combinedText = text;
       options.forEach((option, index) => {
@@ -101,23 +103,19 @@ function TweekComponent() {
       });
       return combinedText;
     }, [text, options]);
-
+  
     return (
       <Alert variant="success">
         <TextWithLineBreaks text={text} />
         {options.map((option, index) => (
           <React.Fragment key={index}>
             {index >= 0 && <br />}
-            <span>{`${option.label}`}</span>
+            <span>{option.label}</span>
           </React.Fragment>
         ))}
         <br />
         <br />
-
-        <Button
-          variant="success"
-          onClick={() => copyTextToClipboard(textToCopy)}
-        >
+        <Button variant="success" onClick={() => copyTextToClipboard(textToCopy)}>
           Copy
         </Button>
       </Alert>
