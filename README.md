@@ -4,7 +4,7 @@
 
 ## Description
 
-https://yourimageshare.com/ib/VDL7jc9vYU
+
 Tweet Scheduler with Time Zones is a tool designed to assist content creators in generating tweet templates that incorporate specific time zones. This is perfect for users looking to schedule tweets for audiences in various geographic locations.
 
 ## Features
